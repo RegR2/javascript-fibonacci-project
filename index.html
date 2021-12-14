@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Fibonacci Sequence</title>
+  </head>
+  <body class="jumbotron-fluid">
+    <div
+      class="
+        page-wrapper
+        container
+        d-flex
+        flex-column
+        justify-content-xl-between
+      "
+    >
+      <div class="form-container container-md col gy-10 mt-5 pt-5">
+        <h1 class="calc-title display-6">Fibonacci Calculator</h1>
+
+        <form class="row g-3">
+          <div class="col-auto pr-0 mr-0">
+            <label
+              for="fibonacci-input"
+              class="col-form-label form-label-plaintext fw-light"
+              >The Fibonacci Of</label
+            >
+          </div>
+          <div class="col-auto px-0 mx-0 input-form">
+            <input
+              type="number"
+              id="inputNumber"
+              class="form-control form-input"
+              style="width: 83px"
+              placeholder="#"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3" id="btn">
+              Is
+            </button>
+          </div>
+          <div class="col-auto mt-2.25 ml-0 gx-1" id="fibYInputWrapper">
+            <span id="fibYContainer" class="fib-Y p-1" style="width: 160px">
+            </span>
+            <div
+              class="spinner-border position: absolute start-0"
+              id="spinnerNumber"
+              role="status"
+            ></div>
+          </div>
+        </form>
+
+        <div class="form-check" id="checkForm">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="checked"
+            id="checkBox"
+          />
+          <label class="form-check-label size-sml" for="flexCheckDefault">
+            Save Calculation
+          </label>
+        </div>
+      </div>
+
+      <div
+        class="results-wrapper container col-xl mt-5 mb-5"
+        id="resultsWrapper"
+      >
+        <h1
+          class="results-title display-6 m-0 p-0 d-inline"
+          style="width: 125px"
+        >
+          Results
+        </h1>
+        <div class="spinner-border" id="spinnerResults" role="status"></div>
+
+        <div class="dropdown mb-3 mt-1">
+          <button
+            class="btn btn-secondary dropdown-toggle text-body"
+            style="background-color: #e6e6e6; border-color: #cccccc"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Sort By
+          </button>
+          <ul
+            class="dropdown-menu"
+            aria-labelledby="dropdownMenuButton1"
+            id="selector"
+          >
+            <li class="border rounded">
+              <a class="dropdown-item" id="numAsc" href="#">Num Asc</a>
+            </li>
+            <li class="border rounded">
+              <a class="dropdown-item" id="numDesc" href="#">Num Desc</a>
+            </li>
+            <li class="border rounded">
+              <a class="dropdown-item" id="dateAsc" href="#">Date Asc</a>
+            </li>
+            <li class="border rounded">
+              <a class="dropdown-item" id="dateDesc" href="#">Date Desc</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="results-container" id="resultsContainer"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./Javascript/script.js"></script>
+  </body>
+</html>

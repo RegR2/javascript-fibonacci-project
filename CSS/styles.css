@@ -1,0 +1,46 @@
+* {
+  font-family: open Sans;
+}
+.results {
+  list-style-type: none;
+  justify-content: justify;
+  margin: 5px;
+}
+
+.fib-Y {
+  position: relative;
+  top: -4px;
+}
+
+.fiby-error {
+  background-color: #f2dede;
+  color: #a94442;
+  border-color: #ebcccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 160px;
+  position: absolute;
+  top: 195px;
+  left: 173px;
+  align-content: center;
+}
+
+.fiby-number {
+  color: #373a3c;
+  font-weight: bold;
+  text-decoration: underline #373a3c;
+}
+
+.input-number {
+  border-color: #d9534f;
+  color: #d9534f;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.form-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
